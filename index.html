@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Question</title>
+</head>
+<body>
+    <form onsubmit="handleFormSubmit(event)">
+    <label for="webtitle">Website Title</label>
+    <input type="text" name="webtitle" id="webtitle"><br>
+    <label for="weburl">Website URL</label>
+    <input type="url" name="weburl" id="weburl"><br>
+    <button type="submit" id="button">Add</button>
+
+    <ul id="list"></ul>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.4/axios.min.js"></script>
+<script src="index.js"></script>
+</html>
