@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "complete node.js guide",
+  "main": "app_Chat.js",
+  "scripts": {
+    "test": "test01",
+    "start": "nodemon app_Express.js",
+    "start-server": "app.Express.js"
+  },
+  "author": "praveen gaur",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1"
+  }
+}
