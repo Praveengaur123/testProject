@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player's Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body class="bg-light">
+    <div class ="bg-success">
+    <div class="container col-md-4  bg-white p-4 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+        <h2 class="bg-warning text-white  d-flex justify-content-center align-items-center  rounded-3"> Player Information</h2>
+        <form id="player-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text", id ="player-name" class="form-control">
+                <label for="url">Photo Url:</label>
+                <input type="text" id="url" class="form-control" required>
+                <label for="date">Date Of Birth:</label>
+                <input type="text" id="birth-date" class="form-control" required>
+                <label for="birthplace">Birthplace:</label>
+                <input type="text" id="birth-place" class="form-control" required>
+                <label for="career">Career:</label>
+                <textarea type="text" id="career" class="form-control" required>
+                </textarea>
+            </div>
+            <div class="form-group">
+                <label for="matches">Number of Matches</label>
+                <input type="number" id="matches" class="form-control" required>
+                <label for="score">Score:</label>
+                <input type="text" id="score" class="form-control" required>
+                <label for="fifties">Fifties:</label>
+                <input type="text" id="fifties" class="form-control" required>
+                <label for="fifties">Centuries:</label>
+                <input type="text" id="centuries" class="form-control" required>
+                <label for="wickets">Wickets:</label>
+                <input type="text" id="wickets" class="form-control" required>
+                <label for="average">Average:</label>
+                <input type="text" id="average" class="form-control" required>
+            </div>
+            <div class="form-group p-3  d-flex justify-content-center align-items-center">
+                <button type="submit" class="btn btn-warning">Submit</button>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <div class="container d-flex justify-content-end p-1 ms-auto">
+        <form id="player-search">
+        <input type="text" id="search">
+        <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+    <div  id="get-player">
+        
+      </div>      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+    <script src="../index.js">
+    </script>
+</body>
+</html>
